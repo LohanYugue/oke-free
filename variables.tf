@@ -37,12 +37,12 @@ variable "image_id" {
 # ----------> Cluster <----------
 variable "k8s_version" {
   type    = string
-  default = "v1.26.7"
+  default = "v1.26.7" #"v1.28.2"
 }
 
 variable "node_size" {
   type    = string
-  default = "1"
+  default = "3"
 }
 
 variable "cluster_name" {
@@ -83,4 +83,5 @@ variable "listerner_port" {
 
 variable "ssh_public_key" {
   type    = string
+  # default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCzvqa8jPn35Z8I6vcgRlvmyucjiVsTO6+lHR0T751RtS6RCixLGmdo9tVissiXJy78LKszrP2vpOaefCgeTMH2bmRYLOmsWBUYTDHgda0TqKIAwN+ajcxlKPHkJhX0/WBbUWfA18gXRmXknTeJHTiaBYx94qDmyxjsOaN/r0K/yqLm4NE0OPqvNTIUsJb6SItxs9oiyvjTqqqLoizAt+nXRiKRZce7GX6PhWVrHfiUVtEvRUzKxZZinm+bxtAAo1O5zRXjQlGPlx8eet8jdSWOtWX9fpBxKccrB49w45hpNAqmcikAOVsViDmQf/NZBWMgQnDSkpFMDBwwiCS1cmyiT7utr+b8fGuZATx8PDnsqzu7t9JsjhJcT3uZrmClOa6YJyCnMX02EYmhdtd7WEYmxRduz52z8tV21z7OcPiGRKi8a3HXlBJ11OMGvXC+B+K3COOYfM/snmtBHltRvHARilFOGslreeArd154bpLNYWFdkc0eGUH7/8Wpsu2dpw2XTeiB5pTW64OA5y1V3IsfT8Xr2h9trrq/RLA96K9/be3/HKe7ZRDlxpILnm7BDPv16DXOjrByZWoVXZGb3/W2zNAzkhk8V2dsi8BIQINQNXZ4t1m9wwSfW9Bzt3LDpT6uAaGJtAle6ow9LmDXNcT9a+OVukbF3kgUgxOTwokcpw== lohan@vostro"
 }
